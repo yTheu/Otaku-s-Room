@@ -1,0 +1,246 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body{
+    margin: 0;
+    background-color: #141414;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(41, 41, 41, 0.425);
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#brand {
+    padding-left: 2%;
+}
+
+#inicio{
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#search-bar {
+    display: flex;
+    justify-content: end;
+    width: 75%;
+    align-items: center;
+}
+
+#search-bar input {
+    border-radius: 15px;
+    border-style: none;
+    padding: 8px;
+    font-size: 16px;
+    z-index: 2; 
+}
+
+#search-icon{
+    background: none;
+    border: none;
+    color: white;
+    scale: 1.5;
+    
+}
+
+#login a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+ /* Exposição inicial de animes */
+.animes {
+    position: relative;
+    width: 100%;
+    height: 91vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1.5s;
+}
+
+.animes:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 91vh;
+    background: linear-gradient(to right, rgba(0,0,0,1), transparent);
+    z-index: 1;
+}
+
+.anime-info {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+    z-index: 2;
+    max-width: 30%;
+}
+.anime-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.anime-desc {
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#assistir{
+    background-color: #107acc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    margin-right: 10px;
+}
+
+#assistir:hover{
+    background-color: #045b9e;
+}
+
+#mais-info{
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+#mais-info:hover{
+    background-color: #fff;
+    color: rgb(36, 36, 36);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.anime-list {
+    position: relative;
+    width: 95%;
+    margin-bottom: 1%;
+    background-color: #0c0c0c;
+    border-radius: .1%;
+    padding-top: 75px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items : flex-start; 
+    text-align: center;
+    gap: 10px;
+}
+
+.anime-list h3 {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    position: absolute;
+    top: 0;
+    left: 1%;
+}
+
+/* Cada anime da lista */
+.anime {
+    max-width: 130px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+}
+
+.anime img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 6px;
+}
+
+.anime img:hover {
+    opacity: .6;
+}
+
+.anime p{
+    margin: 0;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    height: 100px;
+}
+
+.info-footer {
+    max-width: 95%;
+    margin: 0 auto;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#social-media ul li{
+    display: inline-block;
+    margin-right: 30px;
+    scale: 2;
+    color: white;
+}
+
+#name {
+    flex-grow: 1;
+    font-size: 24px;
+    text-align: center;
+}
+
+#copy {
+    padding: 30px 0;
+}
