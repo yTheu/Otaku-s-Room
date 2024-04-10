@@ -1,5 +1,5 @@
 const animeList = [
-    { title: "Kimetsu no Yaiba", synopsis: "Japão, era Taisho. Tanjiro, um bondoso jovem que ganha a vida vendendo carvão, descobre que sua família foi massacrada por um demônio...", image: "assets/fundo-kimetsu-no-yaiba.jpg" },
+    { title: "Kimetsu no Yaiba", synopsis: "Japão, era Taisho. Tanjiro, um bondoso jovem que ganha a vida vendendo carvão, descobre que sua família foi massacrada por um demônio...", image: "assets/fundo-kimetsu-no-yaiba.jpg"},
     { title: "One Piece", synopsis: "Houve um homem que conquistou tudo aquilo que o mundo tinha a oferecer, o lendário Rei dos Piratas, Gold Roger...", image: "assets/fundo-one-piece.jpg" },
     { title: "Chainsaw Man", synopsis: "Denji é um adolescente que mora com Pochita, o Demônio da Motosserra. Por conta das dívidas que herdou de seu pai...", image: "assets/fundo-chainsaw-man.jpg" }
 ];
@@ -15,5 +15,21 @@ function changeAnime() {
     currentIndex = (currentIndex + 1) % animeList.length;
 }
 
-setInterval(changeAnime, 3000);
+setInterval(changeAnime, 5000);
 changeAnime();
+
+function abrirPopup(){
+    document.getElementById('info-popup').style.display = "block";
+}
+
+function fecharPopup(){
+    document.getElementById('info-popup').style.display = "none";
+}
+
+document.getElementById('mais-info').addEventListener("click", abrirPopup);
+document.getElementById('fechar-btn').addEventListener("click", fecharPopup);
+
+
+document.getElementById('info-popup').addEventListener('wheel', function(event) {
+    event.stopPropagation();
+});

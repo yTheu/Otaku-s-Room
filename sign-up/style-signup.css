@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "Otaku's Font";
+    src: url("/assets/fonts/anime_ace_bb/animeace2bb_tt/animeace2_reg.ttf");
+    font-weight: 1000;
+}
+
+body {
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #141414;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    margin: auto; 
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #007bff;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.toggle-password {
+    cursor: pointer;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.toggle-password:hover {
+    text-decoration: underline;
+}
+
+
+.login-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.info-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#social-media {
+    width: auto;
+}
+
+#social-media ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    scale: 1.5;
+}
+
+#social-media a {
+    color: white;
+}
+
+#social-media a:hover{
+    color: #107acc;
+}
+
+.center-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name {
+    font-size: 18px;
+    font-family: "Otaku's Font";
+    margin-bottom: 10px;
+}
+
+#copy {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.helper a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.helper a:hover {
+    opacity: 0.7;
+}

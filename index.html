@@ -17,7 +17,7 @@
                 <input type="text" placeholder="Pesquise um anime...">
                 <button type="submit" id="search-icon"></button>
             <div id="login">
-                <a href="#"><i class="bi bi-person-fill"></i></a>
+                <a href="login/login.html"><i class="bi bi-person-fill"></i></a>
             </div>
         </nav>
     </header>
@@ -26,10 +26,32 @@
         <div class="anime-info">
             <h2 class="anime-title"></h2>
             <p class="anime-desc"></p>
+            <!--<a href="" id="assistir">Assistir</a>-->
+
             <button id="assistir">Assistir</button>
             <button id="mais-info">Mais informações</button>
         </div>
     </section>
+    
+    <div id="info-popup" class="info-popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="fecharPopup()">&times;</span>
+            <div class="video"><video autoplay src="/assets/ep/video.mp4"></video></div>
+            <!--Colocar dps o botão de assistir-->
+            <div class="info-anime">
+                <div class="qualidade">
+                    <button id="assistir">Assistir</button>
+                    <div class="classificacao"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/DJCTQ_-_14.svg/2048px-DJCTQ_-_14.svg.png" alt="" style="width: 22px;"></div>
+                    <div class="rating">N/10</div>
+                    <div class="qntEpisodio">N° episódios</div>
+                </div>
+                <div class="principal">
+                    <div class="tittle"><h1>Título do anime</h1></div>
+                    <div class="desc">Descrição</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="container">
         <section class="anime-list">
@@ -150,15 +172,23 @@
 
     <footer>
         <div class="info-footer">
+
             <div id="social-media">
                 <ul>
                     <li><a href=""><i class="bi bi-envelope-at-fill"></i></a></li>
                     <li><a href=""><i class="bi bi-discord"></i></a></li>
-                    <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href=""><i class="bi bi-instagram"></i></i></a></li>
                 </ul>
             </div>
-            <div id="name">Otaku's Room</div>
-            <div id="copy"><p>&copy; 2024 Otaku's Room. Todos os direitos reservados.</p></div>
+
+            <div class="center-footer">
+                <div id="name">Otaku's Room</div>
+                <div id="copy"><p>&copy; 2024 Otaku's Room. Todos os direitos reservados.</p></div>
+            </div>
+
+            <div class="helper">
+                <a href="">Precisa de ajuda?</a>
+            </div>
         </div>
     </footer>
 

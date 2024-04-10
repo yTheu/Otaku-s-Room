@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+                <span class="toggle-password" onclick="togglePassword()">Mostrar senha</span>
+            </div>
+            <input type="submit" value="Entrar" onclick="logar()">
+        </form>
+        <div class="signup-link">
+            <a href="/sign-up/signup.html">Ainda não tem uma conta?</a>
+        </div>
+    </div>
+
+    <footer class="login-footer">
+        <div class="info-footer">
+            <div id="social-media">
+                <ul>
+                    <li><a href=""><i class="bi bi-envelope-at-fill"></i></a></li>
+                    <li><a href=""><i class="bi bi-discord"></i></a></li>
+                    <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="center-footer">
+                <div id="name">Otaku's Room</div>
+                <div id="copy"><p>&copy; 2024 Otaku's Room. Todos os direitos reservados.</p></div>
+            </div>
+
+            <div class="helper">
+                <a href="">Precisa de ajuda?</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+
+        function logar(){
+            alert("Ainda não funcionar! É uma pena...");
+        }
+    </script>
+</body>
+</html>
