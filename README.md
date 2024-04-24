@@ -1,4 +1,4 @@
-#Otaku's Room
+# Otaku's Room
 
 O Otaku's Room é um projeto incompleto de um streaming de animes online.
 <img></img>
