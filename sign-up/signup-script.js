@@ -8,5 +8,5 @@ function togglePassword() {
 }
 
 function registrar(){
-    alert("Ainda não funcionar! É uma pena...\nVolte mais tarde, ou outro dia");
+    alert("Ainda não funciona! É uma pena...\nVolte mais tarde, ou outro dia");
 }
